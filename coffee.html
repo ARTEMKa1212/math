@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Coffee</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="coffee.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img class="image" src="image/coffee-logo.png" alt="" />
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#products">products</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn">
+                <span id="cart-item-count"></span>
+            </div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here..." />
+            <label for="search-box" class="fas fa-search"></label>
+
+        </div>
+
+        <div class="cart-items-container">
+            <div class="cart-item" id="cart">
+                <div class="content">
+                    <h2>Корзина</h2>
+                    <ul id="cart-items" class="cart-list"></ul>
+                    <p id="cart-total">Общая сумма: $0</p>
+                </div>
+            </div>
+           
+        </div>
+
+    </header>
+
+
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>fresh coffee in the morning</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.</p>
+            <a href="#" class="btn">get yours now</a>
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>about</span> us</h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="image/cup_of_coffee1.jpg" alt="" />
+            </div>
+
+            <div class="content">
+                <h3>what makes our coffee special?</h3>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book
+                </p>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book
+                </p>
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="menu" id="menu">
+
+        <h1 class="heading"> our <span>menu</span></h1>
+
+        <div class="box-container" id="products">
+            <ul class="box-container">
+                <li class="box">
+                    <img src="image/coffee-menu.jpg" alt="">
+                    <h3>tasty and healthy</h3>
+                    <p class="price">$15.99 <span>$20.99</span></p>
+                    <button class="btn" onclick="addToCart('tasty and healthy', '$15.99', 'image/coffee-menu.jpg')">add to cart</button>
+                </li>
+
+                <li class="box">
+                    <img src="image/coffee-menu1.jpg" alt="">
+                    <h3>tasty and healthy</h3>
+                    <p class="price">$15.99 <span>$20.99</span></p>
+                    <button class="btn" onclick="addToCart('tasty and healthy', '$15.99', 'image/coffee-menu1.jpg')">add to cart</button>
+                </li>
+
+                <li class="box">
+                    <img src="image/coffee-menu2.jpg" alt="">
+                    <h3>tasty and healthy</h3>
+                    <p class="price">$15.99 <span>$20.99</span></p>
+                    <button class="btn" onclick="addToCart('tasty and healthy', '$15.99', 'image/coffee-menu2.jpg')">add to cart</button>
+                </li>
+
+                <li class="box">
+                    <img src="image/coffee-menu3.jpg" alt="">
+                    <h3>tasty and healthy</h3>
+                    <p class="price">$15.99 <span>$20.99</span></p>
+                    <button class="btn" onclick="addToCart('tasty and healthy', '$15.99', 'image/coffee-menu3.jpg')">add to cart</button>
+                </li>
+
+                <li class="box">
+                    <img src="image/coffee-menu4.jpg" alt="">
+                    <h3>tasty and healthy</h3>
+                    <p class="price">$15.99 <span>$20.99</span></p>
+                    <button class="btn" onclick="addToCart('tasty and healthy', '$15.99', 'image/coffee-menu4.jpg')">add to cart</button>
+                </li>
+
+                <li class="box">
+                    <img src="image/coffee-menu5.jpg" alt="">
+                    <h3>tasty and healthy</h3>
+                    <p class="price">$15.99 <span>$20.99</span></p>
+                    <button class="btn" onclick="addToCart('tasty and healthy', '$15.99', 'image/coffee-menu5.jpg')">add to cart</button>
+                </li>
+            </ul>
+        </div>
+
+
+    </section>
+
+    <section class="products" id="products">
+
+        <h1 class="heading"> our <span>products</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="fa-solid fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/product.png" alt="" />
+                </div>
+                <div class="content">
+                    <h3>fresh coffee</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="fa-solid fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/product1.png" alt="" />
+                </div>
+                <div class="content">
+                    <h3>fresh coffee</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="fa-solid fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/product2.png" alt="" />
+                </div>
+                <div class="content">
+                    <h3>fresh coffee</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="review" id="review">
+
+        <h1 class="heading"> customer's <span>review</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="image/quote.png" alt="" class="quote" />
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book
+                </p>
+                <img src="image/person1.jpg" class="user" alt="" />
+                <h3>John deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/quote.png" alt="" class="quote" />
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book
+                </p>
+                <img src="image/person2.png" class="user" alt="" />
+                <h3>John deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/quote.png" alt="" class="quote" />
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book
+                </p>
+                <img src="image/person3.jpg" class="user" alt="" />
+                <h3>John deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>contact</span> us </h1>
+
+        <div class="row">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81288.27630051062!2d30.42620849371504!3d50.45490835263742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce8276e9ba57%3A0x444a4ee69406aad1!2z0JrQuNC10LLRgdC60LjQuSDQt9C-0L7Qv9Cw0YDQug!5e0!3m2!1sru!2sua!4v1685788508412!5m2!1sru!2sua"
+             allowfullscreen="" loading="lazy"></iframe>
+
+            <form action="">
+                <h3>get in touch</h3>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="name" />
+                </div>
+
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" placeholder="email" />
+                </div>
+
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="number" placeholder="number" />
+                </div>
+                <input type="submit" value="contact now" class="btn" />
+               
+            </form>
+        </div>
+
+    </section>
+
+    <section class="blogs" id="blogs">
+
+        <h1 class="heading"> our <span>blogs</span> </h1>
+
+        <div class="box-container">
+       
+            <div class="box">
+                <div class="image">
+                    <img src="image/blogs1.jpg" alt="" />
+                </div>
+                <div class="content">
+                    <a href="#" class="title">tasty and refreshing coffee</a>
+                    <span>by admin / 21st may, 2021</span>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book
+                    </p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="image/blogs2.jpg" alt="" />
+                </div>
+                <div class="content">
+                    <a href="#" class="title">tasty and refreshing coffee</a>
+                    <span>by admin / 21st may, 2021</span>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book
+                    </p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img class="image" src="image/blogs3.jpg" alt="" />
+                </div>
+                <div class="content">
+                    <a href="#" class="title">tasty and refreshing coffee</a>
+                    <span>by admin / 21st may, 2021</span>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book
+                    </p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="footer">
+
+        <div class="share">
+            <a href="#" class="fa-bars fa-facebook-f"></a>
+            <a href="#" class="fa-bars fa-twitter"></a>
+            <a href="#" class="fa-bars fa-instagram"></a>
+            <a href="#" class="fa-bars fa-linkedin"></a>
+            <a href="#" class="fa-bars fa-pinterest"></a>
+        </div>
+
+        <div class="links">
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">menu</a>
+            <a href="#">product</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+            <a href="#">blogs</a>
+        </div>
+
+        <div class="credit">created by <span>Artem</span> | all rights reserved</div>
+    </section>
+
+
+<script src="coffee.js"></script>
+
+</body>
+</html>
